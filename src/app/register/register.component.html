@@ -1,0 +1,54 @@
+<h1>Register new user</h1>
+<div
+  *ngIf="alert"
+  class="alert alert-success alert-dismissible fade show"
+  role="alert"
+>
+  <strong>Success !</strong> Your data has been entered successfully
+  <button
+    type="button"
+    class="btn-close"
+    (click)="closealert()"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<form [formGroup]="register" (ngSubmit)="collectRosto()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter your Name"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Enter your Email"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName="email"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">password</label>
+    <input
+      type="password"
+      class="form-control"
+      placeholder="Enter your password"
+      id="exampleInputEmail1"
+      aria-describedby="passHelp"
+      formControlName="password"
+    />
+  </div>
+
+  <button type="submit" [disabled]="register.invalid" class="btn btn-primary">
+    Submit
+  </button>
+</form>

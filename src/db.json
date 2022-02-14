@@ -1,0 +1,32 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "kfc restaurant",
+      "address": "egypt",
+      "email": "kfc@test.com",
+      "myway": "isgood"
+    },
+    {
+      "id": 2,
+      "name": "om restaurant",
+      "address": "egypt",
+      "email": "delhi@test.com",
+      "myway": "good"
+    },
+    {
+      "name": "bazoka",
+      "address": "Tanta and alex",
+      "email": "bazoka.com2522",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "name": "mohamed",
+      "password": "123456",
+      "email": "mohamedahmed25172@gmail.com",
+      "id": 1
+    }
+  ]
+}
